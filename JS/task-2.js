@@ -1,16 +1,35 @@
-
-const message = prompt ('текст гравировки');
-let pricePerWord = 0;
-
 const calculateEngravingPrice = function(message, pricePerWord) {
+  const pricePerWord = 10;
+  let message = prompt('Текст гравировки');
+    for(const word of message[i]){
+      const result = (`${word * 10}`);
+      console.log(`Wtyf uhfdbhjdr ${result}`);
+    }
 
-    const words = message.split(' ');
-    console.log(words);
-    // message = prompt ([]);
-    // for( word of words);
+}
+// console.log(calculateEngravingPrice);
+calculateEngravingPrice()
+// console.log(
+//   calculateEngravingPrice(
+//     'Proin sociis natoque et magnis parturient montes mus',
+//     10,
+//   ),
+// );
+
+
+
+// const message = prompt ('текст гравировки');
+// let pricePerWord = 0;
+
+// const calculateEngravingPrice = function(message, pricePerWord) {
+
+//     const words = message.split(' ');
+//     console.log(words);
+//     // message = prompt ([]);
+//     // for( word of words);
     
-  };
-  calculateEngravingPrice();
+//   };
+ 
 
 // console.log(message.split(' '));
 
