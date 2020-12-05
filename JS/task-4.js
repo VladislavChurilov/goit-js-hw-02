@@ -1,26 +1,20 @@
 
-
-
-// let total = 0;
-
 const formatString = function(string){
     const symbols = string.split('');
-    console.log (symbols);
-    // let total = 0;
+    
     for (let i = 0; i <= symbols.length; i += 1){
-        // total += i;
-        // console.log(total);
-        // if (symbols[i>40])
-        const normString = string.length;
-        // console.log(normString);
-        const result = symbols.length <= 40 ? string : normString ;
+      
+        const result = symbols.length <= 40 ? string : `${symbols.splice(0,39).join('')}...` ;
+        console.log(symbols.length);
         return result;
     }
 }
 
-
-
-
-
-
-console.log(formatString('Curabitur ligula sapien, tincidunt non.nnnn'));
+console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+console.log(formatString('Curabitur ligula sapien.'));
+console.log(
+    formatString(
+      'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
+    ),
+  );
